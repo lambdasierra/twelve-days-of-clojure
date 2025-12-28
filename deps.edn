@@ -1,2 +1,6 @@
 {:deps
- {org.clojure/clojure {:mvn/version "1.12.4"}}}
+ {org.clojure/clojure {:mvn/version "1.12.4"}}
+
+ :aliases
+ {:dev {:extra-paths ["test"]
+        :extra-deps {org.clojure/tools.namespace {:mvn/version "1.5.0"}}}}}
