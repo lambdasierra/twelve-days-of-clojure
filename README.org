@@ -1,0 +1,86 @@
+#+TITLE: Twelve Days of Clojure
+#+AUTHOR: Alessandra Sierra
+
+* Introduction
+
+Inspired by:
+
+#+begin_quote
+  #Christmas #coding #challenge: write a program that prints the full
+  #lyrics to the Twelve Days of Christmas, but be #weird about it.
+
+  Choose whatever programming language you like. Use the language’s
+  idiosyncrasies to your advantage.
+
+  For example, in C you might blend a for-loop with a switch-statement
+  and liberally use case fallthrough. In BASIC you might use computed
+  GOTO. In HTML+CSS you might use counters and selectors to do the
+  numbering. In SQL you might use SQL.
+
+  Go.
+
+  ---[[https://old.mermaid.town/@futzle/115765251257948817][Deborah Pickett @futzle@oldmermaid.town]]
+#+end_quote
+
+* My Rules
+
+My totally made-up, self-imposed rules for this challenge:
+
+1. Written in [[https://clojure.org/][Clojure]]
+2. Must work on JVM Clojure, [[https://clojurescript.org/][ClojureScript]], and [[https://babashka.org/][Babashka]]
+3. No libraries beyond those bundled with Clojure
+4. Define only one macro
+
+I have also decided that the the literal text of the program
+must include the [[https://www.lyricsforchristmas.com/christmas-carols/the-twelve-days-of-christmas/][lyrics of the song]] as Clojure symbols,
+without the repetition of past verses, like so:
+
+#+begin_src clojure
+  (On the first day of Christmas
+      my true love sent to me
+      a partridge in a pear tree)
+
+  (On the second day of Christmas,
+      my true love sent to me
+      Two turtle doves)
+
+  (On the third day of Christmas
+      my true love sent to me
+      Three French hens)
+
+  (On the fourth day of Christmas
+      my true love sent to me
+      Four calling birds)
+
+  (On the fifth day of Christmas
+      my true love sent to me
+      Five golden rings)
+
+  (On the sixth day of Christmas
+      my true love sent to me
+      Six geese a-laying)
+
+  (On the seventh day of Christmas
+      my true love sent to me
+      Seven swans a-swimming)
+
+  (On the eighth day of Christmas
+      my true love sent to me
+      Eight maids a-milking)
+
+  (On the ninth day of Christmas
+      my true love sent to me
+      Nine ladies dancing)
+
+  (On the tenth day of Christmas
+      my true love sent to me
+      Ten lords a-leaping)
+
+  (On the eleventh day of Christmas
+      my true love sent to me
+      Eleven pipers piping)
+
+  (On the twelfth day of Christmas
+      my true love sent to me
+      Twelve drummers drumming)
+#+end_src
