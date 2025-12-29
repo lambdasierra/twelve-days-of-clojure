@@ -1,20 +1,25 @@
 (ns twelve-days-of-clojure.song
   (:refer-clojure :exclude [first second]))
 
-(defn pear-tree [gs]
-  (concat (butlast gs)
-          (list (str (last gs) "."))))
+(defn true-love [c]
+  (fn [gs]
+    (concat (butlast gs)
+            (list (str (last gs) c)))))
+
+(def pear-tree (true-love \.))
 
 (defn partridge [gs]
   (if (seq (next gs))
     (cons 'and (last gs))
     (last gs)))
 
+(def giftwrap (true-love \,))
+
 (def gifts (atom ()))
 
 (defn keep-counting [gift]
   (let [gs (swap! gifts conj gift)]
-    (run! #(apply println %) (butlast gs))
+    (run! #(apply println %) (map giftwrap (butlast gs)))
     (apply println (pear-tree (partridge gs)))))
 
 (defn wrap-gift [x]
