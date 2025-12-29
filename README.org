@@ -59,6 +59,11 @@ At the REPL, run:
   (run)
 #+end_src
 
+*** ClojureScript
+
+ClojureScript build is incomplete;
+started on the =cljs= branch.
+
 ** My Rules
 
 My totally made-up, self-imposed rules for this challenge:
