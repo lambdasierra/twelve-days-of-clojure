@@ -62,7 +62,7 @@ At the REPL, run:
 *** ClojureScript
 
 ClojureScript build is incomplete;
-started on the =cljs= branch.
+started on the [[https://github.com/lambdasierra/twelve-days-of-clojure/tree/cljs][cljs branch]].
 
 ** My Rules
 
