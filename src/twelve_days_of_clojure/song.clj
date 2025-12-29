@@ -1,10 +1,23 @@
 (ns twelve-days-of-clojure.song
   (:refer-clojure :exclude [first second]))
 
+(def gifts (atom ()))
+
+(defn keep-counting [gift]
+  (let [gs (swap! gifts conj gift)]
+    (run! #(apply println %) (butlast gs))
+    (apply println
+           (if (seq (next gs))
+             (cons 'and (last gs))
+             (last gs)))))
+
 (defn wrap-gift [x]
   (list 'quote x))
 
-(def sing (partial printf "%s%n%s%n%s%n%n"))
+(defn sing [& lines]
+  (run! #(apply println %) (butlast lines))
+  (keep-counting (last lines))
+  (newline))
 
 (defmacro On [& verse]
   (->> &form
