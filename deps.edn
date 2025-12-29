@@ -3,4 +3,5 @@
 
  :aliases
  {:dev {:extra-paths ["test"]}
-  :run {:exec-fn twelve-days-of-clojure.runner/run}}}
+  :run {:exec-fn twelve-days-of-clojure.runner/run}
+  :cljs {:deps {org.clojure/clojurescript {:mvn/version "1.12.134"}}}}}
