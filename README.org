@@ -22,6 +22,25 @@ Inspired by:
   ---[[https://old.mermaid.town/@futzle/115765251257948817][Deborah Pickett @futzle@oldmermaid.town]]
 #+end_quote
 
+* Prerequisites
+
+- [[https://clojure.org/guides/getting_started][Clojure command-line tools]]
+- [[https://babashka.org/][Babashka]] (optional)
+
+* Running
+
+To run with Clojure (JVM):
+
+#+begin_src shell
+  clojure -X:run
+#+end_src
+
+To run with Babashka:
+
+#+begin_src shell
+  bb src/twelve_days_of_clojure/song.clj
+#+end_src
+
 * My Rules
 
 My totally made-up, self-imposed rules for this challenge:
@@ -84,3 +103,4 @@ without the repetition of past verses, like so:
       my true love sent to me
       Twelve drummers drumming)
 #+end_src
+

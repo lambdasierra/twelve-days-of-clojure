@@ -2,4 +2,5 @@
  {org.clojure/clojure {:mvn/version "1.12.4"}}
 
  :aliases
- {:dev {:extra-paths ["test"]}}}
+ {:dev {:extra-paths ["test"]}
+  :run {:exec-fn twelve-days-of-clojure.runner/run}}}
