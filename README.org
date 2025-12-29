@@ -4,7 +4,7 @@
 A silly little Clojure program
 that prints the lyrics to “The Twelve Days of Christmas.”
 
-* Introduction
+** Introduction
 
 Inspired by:
 
@@ -25,12 +25,12 @@ Inspired by:
   ---[[https://old.mermaid.town/@futzle/115765251257948817][Deborah Pickett @futzle@oldmermaid.town]]
 #+end_quote
 
-* Prerequisites
+** Prerequisites
 
 - [[https://clojure.org/guides/getting_started][Clojure command-line tools]]
 - [[https://babashka.org/][Babashka]] (optional)
 
-* Running
+** Running
 
 To run with Clojure (JVM):
 
@@ -44,7 +44,7 @@ To run with Babashka:
   bb src/twelve_days_of_clojure/song.clj
 #+end_src
 
-** REPL
+*** REPL
 
 To start a REPL:
 
@@ -59,7 +59,7 @@ At the REPL, run:
   (run)
 #+end_src
 
-* My Rules
+** My Rules
 
 My totally made-up, self-imposed rules for this challenge:
 
