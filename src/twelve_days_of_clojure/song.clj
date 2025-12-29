@@ -29,7 +29,7 @@
     my true love sent to me
     a partridge in a pear tree)
 
-(On the second day of Christmas,
+(On the second day of Christmas
     my true love sent to me
     Two turtle doves)
 
