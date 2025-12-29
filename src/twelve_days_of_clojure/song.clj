@@ -1,8 +1,16 @@
 (ns twelve-days-of-clojure.song
   (:refer-clojure :exclude [first second]))
 
+(defn wrap-gift [x]
+  (list 'quote x))
+
+(def sing (partial printf "%s%n%s%n%s%n%n"))
+
 (defmacro On [& verse]
-  (list 'println (list 'quote &form)))
+  (->> &form
+       (partition-all 6)
+       (map wrap-gift)
+       (list* `sing)))
 
 (On the first day of Christmas
     my true love sent to me
