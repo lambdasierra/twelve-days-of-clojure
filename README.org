@@ -41,6 +41,21 @@ To run with Babashka:
   bb src/twelve_days_of_clojure/song.clj
 #+end_src
 
+** REPL
+
+To start a REPL:
+
+#+begin_src shell
+  clj -A:dev
+#+end_src
+
+At the REPL, run:
+
+#+begin_src clojure
+  (require '[twelve-days-of-clojure.test-harness :refer [run]])
+  (run)
+#+end_src
+
 * My Rules
 
 My totally made-up, self-imposed rules for this challenge:
