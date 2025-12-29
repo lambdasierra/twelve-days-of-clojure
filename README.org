@@ -1,6 +1,9 @@
 #+TITLE: Twelve Days of Clojure
 #+AUTHOR: Alessandra Sierra
 
+A silly little Clojure program
+that prints the lyrics to “The Twelve Days of Christmas.”
+
 * Introduction
 
 Inspired by:
